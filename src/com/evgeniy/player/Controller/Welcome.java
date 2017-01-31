@@ -1,6 +1,5 @@
 package com.evgeniy.player.Controller;
 
-import com.evgeniy.player.Main;
 import com.evgeniy.player.Window;
 
 public class Welcome {
@@ -9,7 +8,7 @@ public class Welcome {
 
     public void loginButton(){
        // window.create("Welcome", "123", 300, 300);
-        window.create("VKLogin.fxml", "Login", 300, 300);
+        window.create("Login.fxml", "Login11", 600, 550);
         System.out.println(window.getStages().size());
     }
 
