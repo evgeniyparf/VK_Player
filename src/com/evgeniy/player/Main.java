@@ -9,7 +9,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        window.create("Login", "Welcome!", 300, 100);
+        window.create("Welcome.fxml", "Welcome!", 300, 100);
         System.out.println(window.getStages().size());
     }
 

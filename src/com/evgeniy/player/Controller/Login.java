@@ -1,18 +1,18 @@
 package com.evgeniy.player.Controller;
 
-import com.evgeniy.player.Main;
-import com.evgeniy.player.Window;
+import javafx.fxml.FXML;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 
-public class Login{
+/**
+ * Created by yolo on 01.02.17.
+ */
+public class Login {
+    @FXML
+    private WebView vkView;
+    private WebEngine engine = vkView.getEngine();
 
-    Window window = Window.getInstance();
-
-    public void loginButton(){
-        window.create("Login", Integer.toString(window.getStages().size() + 1) , 300, 300);
-        System.out.println(window.getStages().size());
-    }
-
-    public void exitButton(){
-        window.getStage("Welcome!").close();
+    public Login(){
+        engine.load("google.com");
     }
 }

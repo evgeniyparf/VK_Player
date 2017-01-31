@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.evgeniy.player.Controller.Login">
+   <children>
+      <WebView fx:id="vkView" prefHeight="472.0" prefWidth="600.0" />
+      <HBox alignment="CENTER_RIGHT" layoutY="473.0" prefHeight="0.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" text="Parse token" />
+            <Button mnemonicParsing="false" text="Close" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

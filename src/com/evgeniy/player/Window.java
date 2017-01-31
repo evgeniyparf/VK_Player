@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Window {
 
@@ -25,7 +26,7 @@ public class Window {
     public void create(String fxml, String title, int width, int height){
         Stage stage = new Stage();
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("View/" + fxml + ".fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("View/" + fxml));
             stage.setScene(new Scene(parent, width, height));
             stage.setTitle(title);
             stages.put(title, stage);
