@@ -32,12 +32,16 @@ public class Window {
             stages.put(title, stage);
             stage.show();
         } catch (IOException ioe){
-            System.out.println("CAUGHT MAZERFAKA");
+            ioe.printStackTrace();
         }
     }
 
     public HashMap<String, Stage> getStages(){
         return stages;
+    }
+
+    public void addStage(Stage stage, String title){
+        stages.put(title, stage);
     }
 
     public Stage getStage(String title){

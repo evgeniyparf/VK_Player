@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.web.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.web.WebView?>
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.evgeniy.player.Controller.Login">
   <columnConstraints>
@@ -17,7 +24,7 @@
    <children>
       <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="600.0" spacing="10.0" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" text="Token" />
+            <Button mnemonicParsing="false" onAction="#getURL" text="Token" />
             <Button mnemonicParsing="false" text="Close" />
          </children>
          <GridPane.margin>
