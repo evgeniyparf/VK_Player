@@ -6,20 +6,27 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.evgeniy.player.Controller.Login">
-   <center>
-      <WebView fx:id="vkView" prefHeight="413.0" prefWidth="617.0" BorderPane.alignment="CENTER" />
-   </center>
-   <bottom>
-      <HBox alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.evgeniy.player.Controller.Login">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="503.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="194.0" minHeight="6.0" prefHeight="47.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="600.0" spacing="10.0" GridPane.rowIndex="1">
          <children>
             <Button mnemonicParsing="false" text="Token" />
             <Button mnemonicParsing="false" text="Close" />
          </children>
-         <BorderPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </BorderPane.margin>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
       </HBox>
-   </bottom>
-</BorderPane>
+      <WebView fx:id="vkView" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</GridPane>

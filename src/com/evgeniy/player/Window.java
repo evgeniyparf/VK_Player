@@ -26,13 +26,13 @@ public class Window {
     public void create(String fxml, String title, int width, int height){
         Stage stage = new Stage();
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("View/" + fxml));
+            Parent parent = FXMLLoader.load(getClass().getResource(fxml));
             stage.setScene(new Scene(parent, width, height));
             stage.setTitle(title);
             stages.put(title, stage);
             stage.show();
         } catch (IOException ioe){
-            System.out.println("File not found exception");
+            System.out.println("CAUGHT MAZERFAKA");
         }
     }
 
