@@ -24,8 +24,12 @@
    <children>
       <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="600.0" spacing="10.0" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" onAction="#getURL" text="Token" />
-            <Button mnemonicParsing="false" text="Close" />
+            <Label fx:id="tokenLabel" HBox.hgrow="NEVER">
+               <padding>
+                  <Insets right="480.0" />
+               </padding>
+            </Label>
+            <Button fx:id="closeButton" defaultButton="true" mnemonicParsing="false" onAction="#close" text="Close" />
          </children>
          <GridPane.margin>
             <Insets />

@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -23,12 +24,14 @@ public class Window {
         return instance;
     }
 
-    public void create(String fxml, String title, int width, int height){
+    public void create(String fxml, String title, int width, int height, boolean Decorated){
         Stage stage = new Stage();
         try {
             Parent parent = FXMLLoader.load(getClass().getResource(fxml));
             stage.setScene(new Scene(parent, width, height));
             stage.setTitle(title);
+            if(!Decorated)
+                stage.initStyle(StageStyle.UNDECORATED);
             stages.put(title, stage);
             stage.show();
         } catch (IOException ioe){

@@ -13,7 +13,7 @@ public class Welcome {
     Window window = Window.getInstance();
 
     public void loginButton(){
-        window.create("View/Login.fxml", "Login", 600, 550);
+        window.create("View/Login.fxml", "Login", 600, 550, false);
     }
 
     public void exitButton(){
